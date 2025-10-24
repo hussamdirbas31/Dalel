@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact.title">اتصل بنا - دليل</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- النافبار -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-map-marked-alt me-2"></i>
+                <span data-i18n="nav.brand">دليل</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="nav.home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html" data-i18n="nav.events">الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-i18n="nav.about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html" data-i18n="nav.contact">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="control-buttons">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="lang-toggle" id="langToggle">
+                        <img src="assets/img/syria-flag.png" alt="Science Syria" class="lang-flag">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- هيرو الصفحة -->
+    <section class="event-detail-hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4" data-i18n="contact.title">اتصل بنا</h1>
+                    <p class="lead" data-i18n="contact.subtitle">نحن هنا للإجابة على استفساراتك واستقبال مقترحاتك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- محتوى الصفحة -->
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- نموذج الاتصال -->
+                <div class="col-lg-8 mb-5">
+                    <div class="contact-form">
+                        <h3 class="mb-4" data-i18n="contact.sendMessage">أرسل رسالة</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="contactName" class="form-label" data-i18n="contact.fullName">الاسم الكامل</label>
+                                        <input type="text" class="form-control" id="contactName" required>
+                                        <div class="invalid-feedback" data-i18n="contact.nameRequired">يرجى إدخال الاسم الكامل</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="contactEmail" class="form-label" data-i18n="contact.email">البريد الإلكتروني</label>
+                                        <input type="email" class="form-control" id="contactEmail" required>
+                                        <div class="invalid-feedback" data-i18n="contact.emailRequired">يرجى إدخال بريد إلكتروني صحيح</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label" data-i18n="contact.subject">الموضوع</label>
+                                <input type="text" class="form-control" id="contactSubject" required>
+                                <div class="invalid-feedback" data-i18n="contact.subjectRequired">يرجى إدخال موضوع الرسالة</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label" data-i18n="contact.message">الرسالة</label>
+                                <textarea class="form-control" id="contactMessage" rows="6" required></textarea>
+                                <div class="invalid-feedback" data-i18n="contact.messageRequired">يرجى كتابة رسالتك</div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="contactNewsletter">
+                                <label class="form-check-label" for="contactNewsletter" data-i18n="contact.newsletter">
+                                    أرغب في تلقي النشرة البريدية لأحدث الفعاليات
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg px-5">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                <span data-i18n="contact.send">إرسال الرسالة</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- معلومات الاتصال -->
+                <div class="col-xl-4">
+                    <div class="contact-info">
+                        <h3 class="mb-4" data-i18n="contact.info">معلومات التواصل</h3>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h5 data-i18n="contact.address">العنوان</h5>
+                                <p data-i18n-html="contact.address.value">شارع بغداد، بناء رقم 15<br>دمشق، سوريا</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h5 data-i18n="contact.phones">الهواتف</h5>
+                                <p data-i18n-html="contact.phones.value">+963 11 123 4567<br>+963 11 123 4568</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h5 data-i18n="contact.email">البريد الإلكتروني</h5>
+                                <p data-i18n-html="contact.email.value">info@dalil.com<br>support@dalil.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-content">
+                                <h5 data-i18n="contact.workHours">أوقات العمل</h5>
+                                <p data-i18n-html="contact.hours.value">الأحد - الخميس: 9:00 - 17:00<br>الجمعة - السبت: مغلق</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="mb-3" data-i18n="contact.follow">تابعنا على</h5>
+                            <div class="social-links">
+                                <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="#" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- خريطة -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="contact-form">
+                        <h3 class="mb-4" data-i18n="contact.map">موقعنا على الخريطة</h3>
+                        <div class="ratio ratio-16x9">
+                            <div class="d-flex align-items-center justify-content-center bg-light rounded shadow-sm" style="min-height: 300px;">
+                                <div class="text-center">
+                                    <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                                    <h5 class="text-muted" data-i18n="contact.map.location">موقعنا في دمشق</h5>
+                                    <p class="text-muted" data-i18n="contact.map.address">شارع المدينة المنورة، بناء رقم 15</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-4">
+                        <i class="fas fa-map-marked-alt me-2"></i>
+                        <span data-i18n="nav.brand">دليل الفعاليات</span>
+                    </h5>
+                    <p class="text-light" data-i18n="footer.description">منصة شاملة لاكتشاف أفضل الفعاليات في مدينتك. نحن نوفر لك أحدث المعلومات عن الفعاليات الثقافية، الرياضية، والفنية.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-4" data-i18n="footer.quickLinks">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none"><i class="fas fa-home me-2"></i><span data-i18n="nav.home">الرئيسية</span></a></li>
+                        <li class="mb-2"><a href="events.html" class="text-light text-decoration-none"><i class="fas fa-calendar-alt me-2"></i><span data-i18n="nav.events">الفعاليات</span></a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none"><i class="fas fa-info-circle me-2"></i><span data-i18n="nav.about">من نحن</span></a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none"><i class="fas fa-envelope me-2"></i><span data-i18n="nav.contact">اتصل بنا</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="mb-4" data-i18n="footer.social">التواصل الاجتماعي</h5>
+                    <div class="social-links mb-4">
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i> info@dalil.com</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i> +96399241214</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0" data-i18n="footer.copyright">© 2024 دليل الفعاليات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر الانتقال للأعلى -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof dalilApp !== 'undefined') {
+                dalilApp.initContactPage();
+            }
+        });
+    </script>
+</body>
+</html>

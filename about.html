@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="about.title">من نحن - دليل</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- النافبار -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-map-marked-alt me-2"></i>
+                <span data-i18n="nav.brand">دليل</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="nav.home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html" data-i18n="nav.events">الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html" data-i18n="nav.about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-i18n="nav.contact">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="control-buttons">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="lang-toggle" id="langToggle">
+                        <img src="assets/img/syria-flag.png" alt="Science Syria" class="lang-flag">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- هيرو الصفحة -->
+    <section class="event-detail-hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4" data-i18n="about.title">من نحن</h1>
+                    <p class="lead" data-i18n="about.subtitle">تعرف على رؤيتنا ورسالتنا وفريق العمل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- محتوى الصفحة -->
+    <main class="py-5">
+        <div class="container">
+            <!-- الرؤية والرسالة -->
+            <section class="row mb-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="policy-card slide-in-left">
+                        <h3><i class="fas fa-eye me-2 text-primary"></i><span data-i18n="about.vision">رؤيتنا</span></h3>
+                        <p class="mb-0" data-i18n="about.vision.text">أن نكون المنصة الرائدة في مجال دليل الفعاليات على مستوى المنطقة، وأن نساهم في إثراء الحياة الثقافية والاجتماعية من خلال توفير معلومات شاملة ودقيقة عن الفعاليات المختلفة.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="policy-card slide-in-right">
+                        <h3><i class="fas fa-bullseye me-2 text-primary"></i><span data-i18n="about.mission">رسالتنا</span></h3>
+                        <p class="mb-0" data-i18n="about.mission.text">تسهيل الوصول إلى المعلومات عن الفعاليات الثقافية، الرياضية، والفنية، وتعزيز المشاركة المجتمعية، ودعم المنظمين في الوصول إلى جمهورهم المستهدف.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- فريق العمل -->
+            <section class="mb-5">
+                <h2 class="text-center mb-5" data-i18n="about.team">فريق العمل</h2>
+                <div class="row">
+                    <!-- الطالب 1: مسؤول JavaScript والاستضافة -->
+                    <div class="col-md-3 mb-4">
+                        <div class="team-member fade-in">
+                            <img src="assets/img/team/hussam.jpg" alt="حسام الدين درباس" 
+                                 onerror="this.src='https://via.placeholder.com/200x200/1d3557/ffffff?text=حسام+الدين+درباس'">
+                            <h4 class="mt-3">حسام الدين مروان درباس</h4>
+                            <div class="role text-primary fw-bold" data-i18n="about.team.member1">مسؤول JavaScript والاستضافة وتحسين التصاميم</div>
+                            <p class="text-muted small">ID: hussam_aldeen_330069</p>
+                            <p class="mt-2">متخصص في تطوير الوظائف التفاعلية باستخدام JavaScript وإدارة استضافة الموقع على GitHub Pages.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- الطالب 2: مسؤول HTML وCSS -->
+                    <div class="col-md-3 mb-4">
+                        <div class="team-member fade-in">
+                            <img src="assets/img/team/nour.jpg" alt="نور الدين محمد عمرو" 
+                                 onerror="this.src='https://via.placeholder.com/200x200/e63946/ffffff?text=نور+الدين+عمرو'">
+                            <h4 class="mt-3">نور الدين محمد عمرو</h4>
+                            <div class="role text-primary fw-bold" data-i18n="about.team.member2">مسؤول HTML وCSS</div>
+                            <p class="text-muted small">ID: nour_297583</p>
+                            <p class="mt-2">متخصص في إنشاء هيكل الموقع باستخدام HTML وتصميم واجهات المستخدم باستخدام CSS وBootstrap.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- الطالب 3: مسؤول HTML وCSS -->
+                    <div class="col-md-3 mb-4">
+                        <div class="team-member fade-in">
+                            <img src="assets/img/team/nour2.jpg" alt="نور ايمن حلاوة" 
+                                 onerror="this.src='https://via.placeholder.com/200x200/f4a261/ffffff?text=نور+ايمن+حلاوة'">
+                            <h4 class="mt-3">نور ايمن حلاوة</h4>
+                            <div class="role text-primary fw-bold" data-i18n="about.team.member3">مسؤول HTML وCSS</div>
+                            <p class="text-muted small">ID: nour_286066</p>
+                            <p class="mt-2">متخصص في إنشاء هيكل الموقع باستخدام HTML وتصميم واجهات المستخدم باستخدام CSS وBootstrap.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- الطالب 4: مسؤول JavaScript والاستضافة -->
+                    <div class="col-md-3 mb-4">
+                        <div class="team-member fade-in">
+                            <img src="assets/img/team/smail.jpg" alt="إسماعيل" 
+                                 onerror="this.src='https://via.placeholder.com/200x200/2a9d8f/ffffff?text=إسماعيل'">
+                            <h4 class="mt-3">إسماعيل يوسف علو </h4>
+                            <div class="role text-primary fw-bold" data-i18n="about.team.member4">مسؤول JavaScript </div>
+                            <p class="text-muted small">ID: esmail_249955</p>
+                            <p class="mt-2">متخصص في تطوير الوظائف التفاعلية باستخدام JavaScript وإدارة استضافة الموقع على GitHub Pages.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- السياسات -->
+            <section class="mb-5">
+                <h2 class="text-center mb-5" data-i18n="about.policies">سياسات تقديم الفعاليات</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="policy-card">
+                            <h4><i class="fas fa-clipboard-check me-2 text-primary"></i><span data-i18n="about.publishing">معايير النشر</span></h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i><span data-i18n="about.publishing.item1">يجب أن تكون الفعالية قانونية ومرخصة</span></li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i><span data-i18n="about.publishing.item2">تقديم معلومات كاملة ودقيقة عن الفعالية</span></li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i><span data-i18n="about.publishing.item3">الالتزام بالمواعيد المعلنة</span></li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i><span data-i18n="about.publishing.item4">مراعاة القيم المجتمعية والثقافية</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="policy-card">
+                            <h4><i class="fas fa-calendar-plus me-2 text-primary"></i><span data-i18n="about.howToAdd">كيفية إضافة فعالية</span></h4>
+                            <ol class="ps-3">
+                                <li class="mb-2" data-i18n="about.howToAdd.step1">إنشاء حساب على المنصة</li>
+                                <li class="mb-2" data-i18n="about.howToAdd.step2">ملء نموذج إضافة الفعالية</li>
+                                <li class="mb-2" data-i18n="about.howToAdd.step3">رفع المستندات المطلوبة</li>
+                                <li class="mb-2" data-i18n="about.howToAdd.step4">انتظار الموافقة من الإدارة</li>
+                                <li class="mb-0" data-i18n="about.howToAdd.step5">استلام تأكيد النشر</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- الإحصائيات -->
+            <section class="mb-5">
+                <h2 class="text-center mb-5" data-i18n="about.stats">إحصائياتنا</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="policy-card">
+                            <h1 class="display-4 text-primary fw-bold">500+</h1>
+                            <h5 class="text-muted" data-i18n="home.stats.events">فعالية منظمة</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="policy-card">
+                            <h1 class="display-4 text-primary fw-bold">50K+</h1>
+                            <h5 class="text-muted" data-i18n="home.stats.users">مستخدم نشط</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="policy-card">
+                            <h1 class="display-4 text-primary fw-bold">100+</h1>
+                            <h5 class="text-muted" data-i18n="home.stats.partners">منظم شريك</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="policy-card">
+                            <h1 class="display-4 text-primary fw-bold">95%</h1>
+                            <h5 class="text-muted" data-i18n="home.stats.rating">تقييم إيجابي</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-4">
+                        <i class="fas fa-map-marked-alt me-2"></i>
+                        <span data-i18n="nav.brand">دليل الفعاليات</span>
+                    </h5>
+                    <p class="text-light" data-i18n="footer.description">منصة شاملة لاكتشاف أفضل الفعاليات في مدينتك. نحن نوفر لك أحدث المعلومات عن الفعاليات الثقافية، الرياضية، والفنية.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-4" data-i18n="footer.quickLinks">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none"><i class="fas fa-home me-2"></i><span data-i18n="nav.home">الرئيسية</span></a></li>
+                        <li class="mb-2"><a href="events.html" class="text-light text-decoration-none"><i class="fas fa-calendar-alt me-2"></i><span data-i18n="nav.events">الفعاليات</span></a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none"><i class="fas fa-info-circle me-2"></i><span data-i18n="nav.about">من نحن</span></a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none"><i class="fas fa-envelope me-2"></i><span data-i18n="nav.contact">اتصل بنا</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="mb-4" data-i18n="footer.social">التواصل الاجتماعي</h5>
+                    <div class="social-links mb-4">
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i> info@dalil.com</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i> +96399241214</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0" data-i18n="footer.copyright">© 2024 دليل الفعاليات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر الانتقال للأعلى -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof dalilApp !== 'undefined') {
+                dalilApp.initAboutPage();
+            }
+        });
+    </script>
+</body>
+</html>

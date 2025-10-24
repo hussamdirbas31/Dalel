@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="nav.brand">دليل - دليل فعاليات المدينة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- النافبار -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-map-marked-alt me-2"></i>
+                <span data-i18n="nav.brand">دليل</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" data-i18n="nav.home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html" data-i18n="nav.events">الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-i18n="nav.about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-i18n="nav.contact">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="control-buttons">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="lang-toggle" id="langToggle">
+                        <img src="assets/img/flags/syria.jpg" alt="Science Syria" class="lang-flag">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الهيرو سيكشن -->
+    <section class="hero-section">
+        <div class="hero-image">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4" data-i18n="home.hero.title">اكتشف أفضل الفعاليات في مدينتك</h1>
+                    <p class="lead mb-5" data-i18n="home.hero.subtitle">دليلك الشامل لأهم الفعاليات الثقافية، الرياضية، والفنية في جميع أنحاء المدينة</p>
+                    <a href="events.html" class="btn btn-light btn-lg px-5 py-3">
+                        <i class="fas fa-calendar-alt me-2"></i>
+                        <span data-i18n="home.hero.button">استكشف الفعاليات</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ميزات المنصة -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.features.title">لماذا تختار دليل؟</h2>
+                <p data-i18n="home.features.subtitle">منصة شاملة تجمع كل ما تحتاجه للاستمتاع بفعاليات المدينة</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4 class="mb-3" data-i18n="home.feature1.title">فعاليات متنوعة</h4>
+                        <p class="text-muted" data-i18n="home.feature1.desc">اكتشف مجموعة واسعة من الفعاليات الثقافية، الرياضية، والفنية المنظمة في مدينتك</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="mb-3" data-i18n="home.feature2.title">مواقع دقيقة</h4>
+                        <p class="text-muted" data-i18n="home.feature2.desc">تعرف على مواقع الفعاليات بدقة مع تفاصيل كاملة عن كل مكان ووسائل الوصول إليه</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h4 class="mb-3" data-i18n="home.feature3.title">حجوزات سهلة</h4>
+                        <p class="text-muted" data-i18n="home.feature3.desc">احجز تذاكر الفعاليات بسهولة وأمان من خلال نظام الحجوزات المتكامل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- سلايدر الفعاليات البارزة - التصميم الجديد المبسط -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.latest.title">أحدث الفعاليات</h2>
+                <p data-i18n="home.latest.subtitle">اكتشف أحدث الفعاليات المضافة إلى المنصة</p>
+            </div>
+            
+            <!-- السلايدر الجديد المبسط -->
+            <div class="simple-slider">
+                <div class="slider-container">
+                    <div class="slider-wrapper" id="sliderWrapper">
+                        <!-- سيتم إضافة الشرائح عبر JavaScript -->
+                    </div>
+                    
+                    <!-- أزرار التنقل -->
+                    <button class="slider-nav-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="slider-nav-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <!-- مؤشرات الصفحات -->
+                    <div class="slider-indicators" id="sliderIndicators">
+                        <!-- سيتم إضافة المؤشرات عبر JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التصنيفات السريعة -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.categories.title">تصفح حسب التصنيف</h2>
+                <p data-i18n="home.categories.subtitle">اختر من بين مجموعة متنوعة من التصنيفات</p>
+            </div>
+            <div class="categories">
+                <button class="btn btn-outline-primary badge-filter active" data-category="all" data-i18n="home.category.all">الكل</button>
+                <button class="btn btn-outline-primary badge-filter" data-category="ثقافة" data-i18n="home.category.culture">ثقافة</button>
+                <button class="btn btn-outline-primary badge-filter" data-category="رياضة" data-i18n="home.category.sports">رياضة</button>
+                <button class="btn btn-outline-primary badge-filter" data-category="موسيقى" data-i18n="home.category.music">موسيقى</button>
+                <button class="btn btn-outline-primary badge-filter" data-category="عائلي" data-i18n="home.category.family">عائلي</button>
+                <button class="btn btn-outline-primary badge-filter" data-category="فنون" data-i18n="home.category.arts">فنون</button>
+                <button class="btn btn-outline-primary badge-filter" data-category="أعمال" data-i18n="home.category.business">أعمال</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفعاليات المميزة - آخر فعاليتين فقط -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.featured.title">الفعاليات المميزة</h2>
+                <p data-i18n="home.featured.subtitle">اكتشف أحدث فعاليتين مضافة إلى المنصة</p>
+            </div>
+            <div class="events-grid" id="featuredEventsGrid">
+                <!-- سيتم إضافة آخر فعاليتين عبر JavaScript -->
+            </div>
+            <div class="text-center mt-5">
+                <a href="events.html" class="btn btn-primary btn-lg px-5">
+                    <span data-i18n="home.viewAll">عرض جميع الفعاليات</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- إحصائيات -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.stats.title">أرقامنا تتحدث</h2>
+                <p data-i18n="home.stats.subtitle">انضم إلى آلاف المستخدمين الراضين عن خدماتنا</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="stat-card fade-in">
+                        <div class="number">500+</div>
+                        <div class="label" data-i18n="home.stats.events">فعالية منظمة</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card fade-in">
+                        <div class="number">50,000+</div>
+                        <div class="label" data-i18n="home.stats.users">مستخدم نشط</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card fade-in">
+                        <div class="number">100+</div>
+                        <div class="label" data-i18n="home.stats.partners">منظم شريك</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card fade-in">
+                        <div class="number">95%</div>
+                        <div class="label" data-i18n="home.stats.rating">تقييم إيجابي</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-4">
+                        <i class="fas fa-map-marked-alt me-2"></i>
+                        <span data-i18n="nav.brand">دليل الفعاليات</span>
+                    </h5>
+                    <p class="text-light" data-i18n="footer.description">منصة شاملة لاكتشاف أفضل الفعاليات في مدينتك. نحن نوفر لك أحدث المعلومات عن الفعاليات الثقافية، الرياضية، والفنية.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="mb-4" data-i18n="footer.quickLinks">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none"><i class="fas fa-home me-2"></i><span data-i18n="nav.home">الرئيسية</span></a></li>
+                        <li class="mb-2"><a href="events.html" class="text-light text-decoration-none"><i class="fas fa-calendar-alt me-2"></i><span data-i18n="nav.events">الفعاليات</span></a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none"><i class="fas fa-info-circle me-2"></i><span data-i18n="nav.about">من نحن</span></a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none"><i class="fas fa-envelope me-2"></i><span data-i18n="nav.contact">اتصل بنا</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="mb-4" data-i18n="footer.social">التواصل الاجتماعي</h5>
+                    <div class="social-links mb-4">
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i> info@dalil.com</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i> +96399241214</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0" data-i18n="footer.copyright">© 2024 دليل الفعاليات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر الانتقال للأعلى -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- مودال الحجز -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="booking.title">حجز مكان في الفعالية</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label" data-i18n="booking.name">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="userName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label" data-i18n="booking.email">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="userEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userPhone" class="form-label" data-i18n="booking.phone">رقم الهاتف</label>
+                            <input type="tel" class="form-control" id="userPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ticketCount" class="form-label" data-i18n="booking.tickets">عدد التذاكر</label>
+                            <input type="number" class="form-control" id="ticketCount" min="1" max="10" value="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialRequests" class="form-label" data-i18n="booking.requests">طلبات خاصة (اختياري)</label>
+                            <textarea class="form-control" id="specialRequests" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="booking.cancel">إلغاء</button>
+                    <button type="button" class="btn btn-primary" id="confirmBooking" data-i18n="booking.confirm">تأكيد الحجز</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
